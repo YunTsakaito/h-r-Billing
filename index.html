@@ -6,22 +6,28 @@
     <title>Billing</title>
     <link rel="stylesheet" href="global.css">
     <link rel="stylesheet" href="draculaColorScheme.css">
-    <script type="text/javascript" src="global.js"></script>
+    <script type="text/javascript" src="global.js" defer></script>
 </head>
 
 <body>
     <div class="navbar">
-        <p>Hotel & Restaurant Billing Module</p>
-        <p id="current-datetime">_TIME_DATE_</p>
+        <div class="flex-row">
+            <img src="asset\svg\payments_FILL0_wght400_GRAD0_opsz24.svg">
+            <p>Hotel & Restaurant Billing Module</p>
+        </div>
+        <div class="flex-row">
+            <img src="asset\svg\calendar_month_FILL0_wght400_GRAD0_opsz24.svg">
+            <p id="current-datetime">_TIME_DATE_</p>
+        </div>
     </div>
 
     <div class="billing-option">
-        <a href="hotel.html" class="d-button option drac-cyan-b">
-            <img src="hotel.png" width="150" alt="hotel-image">
+        <a href="hotel.html" class="d-button option drac-cyan-b blur">
+            <img src="asset/image/hotel.png" width="150" alt="hotel-image">
             <p class="pad10">Hotel Billing</p>
         </a>
-        <a href="restaurant.html" class="d-button option drac-cyan-b">
-            <img src="restaurant.png" width="150" alt="hotel-image">
+        <a href="restaurant.html" class="d-button option drac-cyan-b blur">
+            <img src="asset/image/restaurant.png" width="150" alt="hotel-image">
             <p class="pad10">Restaurant Billing</p>
         </a>
     </div>
