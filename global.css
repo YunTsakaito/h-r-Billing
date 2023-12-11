@@ -1,48 +1,76 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 24px;
-    outline: 1px solid black;
+    /* outline: 1px solid black; */
     color: #21222C;
-    background-color: #F8F8F2;
     padding: 0px;
     margin: 0px;
 }
 
 html{
+    display: flex;
+    padding: 0px;
+    margin: 0px;
     width: 100%;
     height: auto;
+    justify-content: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url('index-background.png');
 }
 
 body{
-    width: 100%;
+    display: flex;
     height: auto;
+    width: 95%;
+    justify-content: center;
 }
 
-.d-button{
-    padding: 5px;
-    border: none;
-    border-radius: 3px;
+.center{
+    justify-self: center;
+    text-align: center;
 }
 
-a.d-button{
-    padding: 5px;
+.d-button{ 
+    display: flex;
+    width: auto;
+    padding: 10px;
+    margin: 10px;
+    height: 50px;
     border: none;
     border-radius: 3px;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
 }
 
-.flex{
+div.billing-option{
+    width: 95%;
+    height: 500px;
     display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+    backdrop-filter: blur(4px);
 }
 
-.flex-row{
-    flex-direction: row;
-}
+div.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 65px;
+    backdrop-filter: blur(4px);
+}div.navbar *{padding: 10px;}
 
-.flex-col{
+.option{
+    width: 50%;
+    height: 50%;
     flex-direction: column;
 }
 
-.block{
-    display: block;
+.pad10{
+    padding: 10px;
 }

@@ -40,13 +40,16 @@
 
 
 .drac-cyan-b{
-    background-color: #8BE9FD;
+    background-color: rgba(59, 109, 121, 0.5);
+    transition: 0.3s;
 }
 button.drac-cyan-b:hover{
     background-color: #A4FFFF;
+    transition: 0.3s;
 }
 a.drac-cyan-b:hover{
     background-color: #A4FFFF;
+    transition: 0.3s;
 }
 
 .drac-green-b{
