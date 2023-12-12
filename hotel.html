@@ -20,9 +20,10 @@
         </div>
     </div>
 
-    <div class="content flex-col">
-
-        <form action="" class="flex-col drac-cyan-b blur">
+    <div class="content flex-col" style="align-items: center;">
+        
+        <form action="" class="blur">
+            <p class="white" style="align-self: flex-start; padding-left: 75px;">Check In</p>
             <div class="flex-row form-check-in">
                 <div class="flex-col">
                     <p>Guest Information</p>
@@ -108,7 +109,7 @@
                     </div>
                 </div>
 
-                <div class="flex-col">
+                <div class="flex-col" style="background-color: rgba(0, 0, 0, 0.5);">
                     <div class="flex-row field">
                         <label for="do1">Date Out:</label>
                         <input id="do1" type="date" readonly>
@@ -148,20 +149,18 @@
                 </div>
                 
             </div>
-            <div>
-                <button>Check In</button>
-            </div>
+            <button class="d-button" style="width: 100px;">Check In</button>
         </form>
             
 
-        <div class="flex-col" style="padding: 20px;">
+        <div class="flex-col check-in-table" style="padding: 50px 0px;">
             <div class="flex-row white blur center">
                 <div class="flex-row">
-                    <p>Occupied Today:</p><p style="padding: 6px;">-</p>
+                    <p style="padding: 6px;">Occupied Today:</p><p style="padding: 6px;">-</p>
                 </div>
                 <p style="padding: 6px;"> | </p>
                 <div class="flex-row">
-                    <p>Vacant:</p><p style="padding: 6px;">-</p>
+                    <p style="padding: 6px;">Vacant:</p><p style="padding: 6px;">-</p>
                 </div>
             </div>
 
@@ -255,7 +254,7 @@
     </div>
     
     <div class="footer">
-        <div class="flex-row">
+        <div class="flex-row" style="align-items: center;">
             <img src="asset/image/logo.jpg" alt="logo" width="50px">
             <p>Hotel & Restaurant Billing Module</p>
         </div>
