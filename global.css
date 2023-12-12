@@ -1,7 +1,7 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 24px;
-    /* outline: 1px solid black; */
+    outline: 1px solid black;
     color: #21222C;
     padding: 0px;
     margin: 0px;
@@ -10,12 +10,23 @@
 .flex-row{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
 }
 .flex-col{
     display: flex;
     flex-direction: column;
+}
+
+.white *{
+    color: white;
+}
+
+form *{
+    font-size: 18px;
+    padding: 5px;
+    color: #21222C;
+}form label{color: white;
+}form p{color: white;
+        font-size: larger
 }
 
 html{
@@ -40,12 +51,12 @@ body{
     height: 1000px;
     width: 100%;
     justify-content: center;
-    align-content: space-between;
     flex-direction: column;
     min-height: 100vh;
 }
 
 .center{
+    justify-content: center;
     justify-self: center;
     text-align: center;
 }
@@ -97,10 +108,18 @@ div.footer{
     backdrop-filter: blur(4px);
 }
 
+.form-check-in{
+    display: flex;
+    width: 95%;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
 div.content{
     display: flex;
-    justify-content: center;
     width: 100%;
+    justify-content: center;
     padding-top: 200px;
 }
 
@@ -127,4 +146,21 @@ div.content{
 }
 ::-webkit-scrollbar-thumb:hover {
     background-color: #b2b6dd;
+}
+
+tr:hover {
+    cursor: pointer;
+    background-color: #f5f5f53d;
+}
+
+div.field{
+    display: flex;
+    justify-content: space-between;
+}
+
+table *{
+    font-size: 20px;
+}
+textarea{
+    resize: none;
 }

@@ -20,8 +20,238 @@
         </div>
     </div>
 
-    <div class="content">
-        
+    <div class="content flex-col">
+
+        <form action="" class="flex-col drac-cyan-b blur">
+            <div class="flex-row form-check-in">
+                <div class="flex-col">
+                    <p>Guest Information</p>
+                    <div class="flex-row field">
+                        <label for="ln1">Last Name:</label>
+                        <input id="ln1" type="text">
+                    </div>
+                    <div class="flex-row field">
+                        <label for="fn1">First Name:</label>
+                        <input id="fn1" type="text">
+                    </div>
+                    <div class="flex-row field">
+                        <label for="a1">Address:</label>
+                        <textarea id="a1" type="text"></textarea>
+                    </div>
+                    <div class="flex-row field">
+                        <label for="c1">Country:</label>
+                        <input id="c1" type="text">
+                    </div>
+
+                    <p>Identification Information</p>
+                    <div class="flex-row field">
+                        <label for="idt1">ID Type:</label>
+                        <select id="idt1" type="text">
+                            <option value="id1">id 1</option>
+                            <option value="id2">id 2</option>
+                            <option value="id3">id 3</option>
+                            <option value="id4">id 4</option>
+                            <option value="id5">id 5</option>
+                        </select>
+                    </div>
+                    <div class="flex-row field">
+                        <label for="idn1">ID Number:</label>
+                        <input id="idn1" type="text">
+                    </div>
+                </div>
+                
+                <div class="flex-col">
+                    <p>Rate Information</p>
+                    <div class="flex-row field">
+                        <label for="rn1">Room Number:</label>
+                        <input id="rn1" type="text">
+                    </div>
+                    <div class="flex-row field">
+                        <label for="di1">Date In:</label>
+                        <input id="di1" type="date">
+                    </div>
+                    <div class="flex-row field">
+                        <label for="bs1">Rate Type:</label>
+                        <select id="bs1">
+                            <option value="rt1">Rate Type 1</option>
+                            <option value="rt2">Rate Type 2</option>
+                            <option value="rt3">Rate Type 3</option>
+                            <option value="rt4">Rate Type 4</option>
+                            <option value="rt5">Rate Type 5</option>
+                        </select>
+                    </div>
+                    <div class="flex-row field">
+                        <label for="nod1">No. of Days:</label>
+                        <input id="nod1" type="number">
+                    </div>
+                    <div class="flex-row field">
+                        <label for="noa1">No. of Adults:</label>
+                        <input id="noa1" type="number">
+                    </div>
+                    <div class="flex-row field">
+                        <label for="noc1">No. of Childrens:</label>
+                        <input id="noc1" type="number">
+                    </div>
+                    <div class="flex-row field">
+                        <label for="bs1">Business Source:</label>
+                        <select id="bs1">
+                            <option value="bs1">Business Source 1</option>
+                            <option value="bs2">Business Source 2</option>
+                            <option value="bs3">Business Source 3</option>
+                            <option value="bs4">Business Source 4</option>
+                            <option value="bs5">Business Source 5</option>
+                        </select>
+                    </div>
+                    <div class="flex-row field">
+                        <label for="n1">Note:</label>
+                        <textarea id="n1" type="text"></textarea>
+                    </div>
+                </div>
+
+                <div class="flex-col">
+                    <div class="flex-row field">
+                        <label for="do1">Date Out:</label>
+                        <input id="do1" type="date" readonly>
+                    </div>
+                    <div class="flex-row field">
+                        <label for="rp1">Rate/Period:</label>
+                        <input id="rp1" type="number" readonly>
+                    </div>
+                    <div class="flex-row field">
+                        <label for="tc1">Total Charge:</label>
+                        <input id="tc1" type="number" readonly>
+                    </div>
+                    <div class="flex-row field">
+                        <label for="oc1">Other Charge:</label>
+                        <input id="oc1" type="number" readonly>
+                    </div>
+                    <div class="flex-row field">
+                        <label for="st1">Sub Total:</label>
+                        <input id="st1" type="number" readonly>
+                    </div>
+                    <div class="flex-row field">
+                        <label for="d1">Discount:</label>
+                        <input id="d1" type="number" readonly>
+                    </div>
+                    <div class="flex-row field">
+                        <label for="t1">Total:</label>
+                        <input id="t1" type="number" readonly>
+                    </div>
+                    <div class="flex-row field">
+                        <label for="ap1">Amount Paid:</label>
+                        <input id="ap1" type="number" readonly>
+                    </div>
+                    <div class="flex-row field">
+                        <label for="b1">Balance:</label>
+                        <input id="b1" type="number" readonly>
+                    </div>
+                </div>
+                
+            </div>
+            <div>
+                <button>Check In</button>
+            </div>
+        </form>
+            
+
+        <div class="flex-col" style="padding: 20px;">
+            <div class="flex-row white blur center">
+                <div class="flex-row">
+                    <p>Occupied Today:</p><p style="padding: 6px;">-</p>
+                </div>
+                <p style="padding: 6px;"> | </p>
+                <div class="flex-row">
+                    <p>Vacant:</p><p style="padding: 6px;">-</p>
+                </div>
+            </div>
+
+            <table border="1" class="white blur">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Last Name</th>
+                        <th>First Name</th>
+                        <th>Address</th>
+                        <th>Country</th>
+                        <th>ID Type</th>
+                        <th>ID Number</th>
+                        <th>Room Number</th>
+                        <th>Date In</th>
+                        <th>Rate Type</th>
+                        <th>No. of Days</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td>1</td>
+                        <td>Doe</td>
+                        <td>John</td>
+                        <td>123 Main St</td>
+                        <td>USA</td>
+                        <td>Passport</td>
+                        <td>AB123456</td>
+                        <td>101</td>
+                        <td>2023-12-12</td>
+                        <td>Standard</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Smith</td>
+                        <td>Jane</td>
+                        <td>456 Oak Ave</td>
+                        <td>Canada</td>
+                        <td>Driver's License</td>
+                        <td>CD789012</td>
+                        <td>202</td>
+                        <td>2023-12-14</td>
+                        <td>Deluxe</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Johnson</td>
+                        <td>Michael</td>
+                        <td>789 Pine St</td>
+                        <td>UK</td>
+                        <td>National ID</td>
+                        <td>UK456789</td>
+                        <td>303</td>
+                        <td>2023-12-16</td>
+                        <td>Executive</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Lee</td>
+                        <td>Susan</td>
+                        <td>567 Elm Rd</td>
+                        <td>Australia</td>
+                        <td>Passport</td>
+                        <td>AUS123456</td>
+                        <td>404</td>
+                        <td>2023-12-18</td>
+                        <td>Standard</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Wang</td>
+                        <td>Li</td>
+                        <td>888 Willow Ln</td>
+                        <td>China</td>
+                        <td>National ID</td>
+                        <td>CN987654</td>
+                        <td>505</td>
+                        <td>2023-12-20</td>
+                        <td>Deluxe</td>
+                        <td>6</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
     </div>
     
     <div class="footer">
