@@ -12,7 +12,7 @@
     <div class="navbar">
         <div class="flex-row">
             <img src="asset\svg\payments_FILL0_wght400_GRAD0_opsz24.svg">
-            <p>Hotel & Restaurant Billing Module</p>
+            <p>Restaurant Billing Module</p>
         </div>
         <div class="flex-row">
             <img src="asset\svg\calendar_month_FILL0_wght400_GRAD0_opsz24.svg">
@@ -20,8 +20,146 @@
         </div>
     </div>
 
-    <div class="content">
-        
+    <div class="content flex-col" style="align-items: center;">
+        <p class="white" style="align-self: flex-start; padding-left: 75px;">Order</p>
+        <div class="resto">
+            <div class="flex-col info blur">
+                <form action="">
+                    <div class="flex-col" style="width: 98%;">
+                        <div class="flex-row field">
+                            <label for="">Table No.</label>
+                            <select name="" id="">
+                                <option value="tn1">Table 1</option>
+                                <option value="tn2">Table 2</option>
+                                <option value="tn3">Table 3</option>
+                                <option value="tn4">Table 4</option>
+                                <option value="tn5">Table 5</option>
+                                <option value="tn6">Table 6</option>
+                                <option value="tn7">Table 7</option>
+                                <option value="tn8">Table 8</option>
+                                <option value="tn9">Table 9</option>
+                            </select>
+                        </div>
+                        <div class="flex-row field">
+                            <label for="">Cust. Name</label>
+                            <input type="text">
+                        </div>
+                        <table border="1">
+                            <thead>
+                                <tr>
+                                    <th>Menu</th>
+                                    <th>Qty</th>
+                                    <th>Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Item 1</td>
+                                    <td>1</td>
+                                    <td>$10.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Item 2</td>
+                                    <td>2</td>
+                                    <td>$15.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Item 3</td>
+                                    <td>3</td>
+                                    <td>$20.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Item 4</td>
+                                    <td>1</td>
+                                    <td>$8.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="flex-row field">
+                        <label for="">Total</label>
+                        <input type="number" readonly>
+                    </div>
+                    <div class="flex-row" style="flex-wrap: wrap; justify-content: space-between;">
+                        <button class="d-button" type="button" style="flex-grow: 1;">Reward</button>
+                        <button class="d-button" type="button" style="flex-grow: 1;">Note</button>
+                        <button class="d-button" type="button" style="flex-grow: 1;">Transfer</button>
+                        <button class="d-button" type="button" style="flex-grow: 1;">Split</button>
+                        <button class="d-button" type="button" style="flex-grow: 1;">Bill</button>
+                        <button class="d-button" style="flex-grow: 1;">Order</button>
+                    </div>
+                </form>
+                <div class="calculator-container">
+                    <button class="calculator-button">7</button>
+                    <button class="calculator-button">8</button>
+                    <button class="calculator-button">9</button>
+                    <button class="calculator-button operator">Qty</button>
+                    <button class="calculator-button">4</button>
+                    <button class="calculator-button">5</button>
+                    <button class="calculator-button">6</button>
+                    <button class="calculator-button operator">Price</button>
+                    <button class="calculator-button">1</button>
+                    <button class="calculator-button">2</button>
+                    <button class="calculator-button">3</button>
+                    <button class="calculator-button operator">-</button>
+                    <button class="calculator-button double">0</button>
+                    <button class="calculator-button">.</button>
+                    <button class="calculator-button operator">+</button>
+                    <button class="calculator-button equals">Clear</button>
+                </div>
+            </div>
+            
+            <div class="flex-row menu blur" style="flex-wrap: wrap; justify-content: center;">
+                <div class="card">
+                    <img src="asset/image/menu/burger.jpg" alt="">
+                    <p>Burger $20</p>
+                </div>
+                <div class="card">
+                    <img src="asset/image/menu/burger.jpg" alt="">
+                    <p>Burger $20</p>
+                </div>
+                <div class="card">
+                    <img src="asset/image/menu/burger.jpg" alt="">
+                    <p>Burger $20</p>
+                </div>
+                <div class="card">
+                    <img src="asset/image/menu/burger.jpg" alt="">
+                    <p>Burger $20</p>
+                </div>
+                <div class="card">
+                    <img src="asset/image/menu/burger.jpg" alt="">
+                    <p>Burger $20</p>
+                </div>
+                <div class="card">
+                    <img src="asset/image/menu/burger.jpg" alt="">
+                    <p>Burger $20</p>
+                </div>
+                <div class="card">
+                    <img src="asset/image/menu/burger.jpg" alt="">
+                    <p>Burger $20</p>
+                </div>
+                <div class="card">
+                    <img src="asset/image/menu/burger.jpg" alt="">
+                    <p>Burger $20</p>
+                </div>
+                <div class="card">
+                    <img src="asset/image/menu/burger.jpg" alt="">
+                    <p>Burger $20</p>
+                </div>
+                <div class="card">
+                    <img src="asset/image/menu/burger.jpg" alt="">
+                    <p>Burger $20</p>
+                </div>
+                <div class="card">
+                    <img src="asset/image/menu/burger.jpg" alt="">
+                    <p>Burger $20</p>
+                </div>
+                <div class="card">
+                    <img src="asset/image/menu/burger.jpg" alt="">
+                    <p>Burger $20</p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="footer">
