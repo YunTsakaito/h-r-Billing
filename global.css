@@ -37,9 +37,12 @@ html{
 
 body{
     display: flex;
-    height: auto;
-    width: 95%;
+    height: 1000px;
+    width: 100%;
     justify-content: center;
+    align-content: space-between;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .center{
@@ -65,20 +68,41 @@ div.billing-option{
     height: 500px;
     display: flex;
     justify-content: space-around;
-    padding-top: 100px;
 }
 
 div.navbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: absolute;
+    position: fixed;
+    top: 0px;
+    left: 0px;
     z-index: 10;
     background-color: rgba(255, 255, 255, 0.5);
     width: 100%;
     height: 65px;
     backdrop-filter: blur(4px);
 }div.navbar *{padding: 5px;}
+
+div.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: auto;
+    position: relative;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 65px;
+    backdrop-filter: blur(4px);
+}
+
+div.content{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 200px;
+}
 
 .option{
     width: 50%;
